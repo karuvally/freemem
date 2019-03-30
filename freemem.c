@@ -5,8 +5,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-// the main function
-int main()
+
+// free the memory
+int free_memory()
 {
 	// open the drop_caches file
 	FILE *file_pointer;
@@ -15,8 +16,8 @@ int main()
 	// if NULL pointer is returned, exit
 	if(file_pointer == NULL)
 	{
-		printf("error: no permissions to write to file\n");
-		exit(1);
+		printf("you need to be root :(\n");
+		return(1);
 	}
 	
 	// write to the file
@@ -28,4 +29,11 @@ int main()
 	// exit
 	printf("memory cleared!\n");
 	return 0;
+}
+
+
+// the main function
+int main()
+{
+
 }
