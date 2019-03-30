@@ -7,7 +7,7 @@
 
 
 // free the memory
-int free_memory(char value)
+int free_memory(char* value)
 {
 	// open the drop_caches file
 	FILE *file_pointer;
@@ -36,5 +36,5 @@ int free_memory(char value)
 int main()
 {
 	// free the memory
-	free_memory()
+	free_memory("1");
 }
