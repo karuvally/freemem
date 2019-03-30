@@ -37,4 +37,6 @@ int main()
 {
 	// free the memory
 	free_memory("1");
+
+	return 0;
 }
