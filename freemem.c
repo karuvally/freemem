@@ -7,7 +7,7 @@
 
 
 // free the memory
-int free_memory()
+int free_memory(char value)
 {
 	// open the drop_caches file
 	FILE *file_pointer;
@@ -21,7 +21,7 @@ int free_memory()
 	}
 	
 	// write to the file
-	fprintf(file_pointer, "1");
+	fprintf(file_pointer, value); 
 	
 	// close the file
 	fclose(file_pointer);
@@ -35,5 +35,6 @@ int free_memory()
 // the main function
 int main()
 {
-
+	// free the memory
+	free_memory()
 }
